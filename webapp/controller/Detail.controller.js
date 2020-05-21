@@ -3,7 +3,7 @@ sap.ui.define([
 ], function (Controller) {
 	"use strict";
 
-	return Controller.extend("sap.ui.demo.fiori2.controller.Detail", {
+	return Controller.extend("com.shunyu.lujb.controller.Detail", {
 		onInit: function () {
 			this.oOwnerComponent = this.getOwnerComponent();
 

@@ -6,7 +6,7 @@ sap.ui.define([
 ], function(UIComponent, JSONModel, FlexibleColumnLayoutSemanticHelper, fioriLibrary) {
 	'use strict';
 
-	return UIComponent.extend('sap.ui.demo.fiori2.Component', {
+	return UIComponent.extend('com.shunyu.lujb.Component', {
 
 		metadata: {
 			manifest: 'json'
@@ -23,7 +23,7 @@ sap.ui.define([
 			this.setModel(oModel);
 
 			// set products demo model on this sample
-			oProductsModel = new JSONModel(sap.ui.require.toUrl('sap/ui/demo/mock') + '/products.json');
+			oProductsModel = new JSONModel(sap.ui.require.toUrl('com/shunyu/lujb/mock') + '/products.json');
 			oProductsModel.setSizeLimit(1000);
 			this.setModel(oProductsModel, 'products');
 
